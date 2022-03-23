@@ -4,7 +4,9 @@
     --white: #FFFFFF;
     --black: #000000;
 
-
+    --linen: #F9DFDC;
+    --blue-chill: #0A81AB;
+    --deep-sapphire: #0C4271;
 }
 
 /* BEGIN GLOBAL DEFAULTS */
@@ -18,9 +20,37 @@
 
 html {
     font-size: 16px;
+    font-family: Poppins, sans-serif;
+    color: var(--black);
 }
 
-/* END GLOBAL DEFAULTS */
+body {
+    background-color: var(--linen);
+}
+
+.landing {
+    /*width: 100vw;*/
+    /*height: 100%;*/
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: end;
+
+    background-color: var(--blue-chill);
+}
+
+.nav-li {
+    margin: 15px;
+    padding: 5px 10px;
+}
+
+.nav-li-right:hover {
+    background-color: var(--blue-chill);
+}
+#nav-li-id-1-dev {
+    margin-right: auto;
+}
 
 
 /* extra small and down - phones */
@@ -46,7 +76,7 @@ html {
 
 /* BEGIN DEV */
 * {
-    outline: 1px solid black;
+    /*outline: 1px solid black;*/
 }
 
 .centered-1 {

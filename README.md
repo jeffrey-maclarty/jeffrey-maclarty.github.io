@@ -1,1 +1,0 @@
-# jeffrey-maclarty.github.io
