@@ -46,13 +46,20 @@ body {
 }
 
 .nav-li-right:hover {
-    background-color: var(--blue-chill);
+    outline: 2px solid var(--deep-sapphire);
+    border-radius: 25px;
 }
 #nav-li-id-1-dev {
     margin-right: auto;
 }
 
-
+.container-about {
+    height: 425px;
+}
+.container-about-project {
+    display: flex;
+    justify-content: space-evenly;
+}
 /* extra small and down - phones */
 @media only screen and (max-width: 600px) {
 
@@ -79,6 +86,12 @@ body {
     /*outline: 1px solid black;*/
 }
 
+.ph-300x240 {
+    height: 240px;
+    width: 300px;
+
+    background-color: lightseagreen;
+}
 .centered-1 {
     position: fixed;
     top: 10%;
