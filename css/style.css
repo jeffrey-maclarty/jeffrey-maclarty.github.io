@@ -28,13 +28,18 @@ html {
 
 body {
     background-color: var(--blue-chill);
-    margin: 4px;
+    margin: .2rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 .container-main {
     background-color: var(--linen);
-    gap: 2rem;
 }
+
 
 /* BEGIN NAV AND FIXED-BOTTOM-BORDER */
 .nav,
@@ -44,14 +49,13 @@ body {
     background-color: var(--blue-chill);
 }
 
-.nav,
-.nav-ul {
+.nav {
     top: 0;
 }
 
 .fixed-border-bottom {
     bottom: 0;
-    height: 4px;
+    height: .3rem;
 }
 
 .nav-ul {
@@ -63,25 +67,31 @@ body {
 }
 
 /* @formatter:off */
-/*#nav-li-id-1-dev {grid-area: dev;}*/
-/*#nav-li-space {grid-area: spacer;}*/
-/*#nav-li-id-2-portfolio {grid-area: portfolio;}*/
-/*#nav-li-id-3-contact {grid-area: contact;}*/
-/*#nav-li-id-4-about {grid-area: about;}*/
+#nav-li-id-1-dev {grid-area: dev;}
+#nav-li-space {grid-area: spacer;}
+#nav-li-id-2-portfolio {grid-area: portfolio;}
+#nav-li-id-3-contact {grid-area: contact;}
+#nav-li-id-4-about {grid-area: about;}
 /*!* @formatter:on *!*/
 
 .nav-li {
-    margin: 10px 0;
-    padding: 5px 10px;
+    margin: .6rem 0;
+    padding: .4rem .8rem;
 }
 
 .nav-li:nth-of-type(5) {
-    margin-right: 25px;
+    margin-right: 1.5rem;
 }
 
 .nav-li-right:hover {
-    outline: 2px solid var(--deep-sapphire);
-    border-radius: 25px;
+    /*outline: 2px solid var(--deep-sapphire);*/
+    box-shadow: .2rem .2rem .2rem var(--deep-sapphire);
+    border-radius: .3rem;
+}
+
+.nav-li-right:active {
+    outline: .1rem solid var(--deep-sapphire);
+    box-shadow: 0 0 0;
 }
 
 /* END NAV AND FIXED-BOTTOM-BORDER */
@@ -108,24 +118,22 @@ body {
 
 .container-about-thumbs {
     display: grid;
-    grid: repeat(4, 425px) / 425px;
+    grid: repeat(4, 26rem) / 26rem;
     grid-template-areas:
         'img-1'
         'img-2'
         'img-3'
         'img-4';
-    grid-gap: 5px;
+    grid-gap: .3rem;
     justify-content: center;
     align-content: center;
-    /*height: 2000px;*/
-
 }
 
 .container-about-thumbs .img {
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
-    border: 3px solid var(--deep-sapphire)
+    border: .2rem solid var(--deep-sapphire)
 }
 
 .container-about-thumbs .img-1 {
@@ -159,7 +167,7 @@ body {
 /* small and up - large phones and tablets */
 @media only screen and (min-width: 600px) {
     .container-about-thumbs {
-        grid: 250px 250px / 1fr 1fr;
+        grid: 15.5rem 15.5rem / 1fr 1fr;
         grid-template-areas:
             'img-1 img-2'
             'img-3 img-4';
@@ -180,7 +188,7 @@ body {
 /* large and up */
 @media only screen and (min-width: 992px) {
     .container-about-thumbs {
-        grid: 250px / repeat(4, 1fr);
+        grid: 15.5rem / repeat(4, 1fr);
         grid-template-areas:
             'img-1 img-2 img-3 img-4';
     }
