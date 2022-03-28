@@ -102,7 +102,7 @@ a {
     font-family: "Roboto Mono", monospace;
     font-size: 1rem;
     border-radius: .3rem;
-    padding: .3rem;
+    padding: .3rem 1rem;
 }
 
 #nav-li-id-1-dev a {
@@ -111,7 +111,6 @@ a {
 
 #nav-li-id-1-dev a:hover {
     color: var(--light-gray);
-    font-weight: 900;
 }
 
 .dev-prompt {
@@ -162,7 +161,7 @@ a {
     margin: 0 0 .5rem 3rem;
     font-family: "Roboto Mono", monospace;
     list-style: none;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 .nav-modal-dev a {
