@@ -1,0 +1,41 @@
+@keyframes dev-prompt {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* extra small and down - phones */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* small and up - large phones and tablets */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* medium and up */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* large and up */
+@media only screen and (min-width: 992px) {
+
+}
