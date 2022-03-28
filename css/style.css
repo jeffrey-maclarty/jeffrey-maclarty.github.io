@@ -40,6 +40,10 @@ a {
     background-color: var(--linen);
 }
 
+.hidden {
+    display: none;
+}
+
 
 /* BEGIN NAV AND FIXED-BOTTOM-BORDER */
 .nav,
@@ -95,6 +99,23 @@ a {
 }
 
 /* END NAV AND FIXED-BOTTOM-BORDER */
+
+/* BEGIN MODALS */
+.nav-dev-modal {
+    position: absolute;
+    width: 28rem;
+    height: 28rem;
+    left: -50%;
+    top: 15%;
+
+    margin: 0 auto;
+    /*z-index: 1;*/
+
+    background-color: var(--white);
+    color: var(--black);
+    border: .3rem solid var(--deep-sapphire);
+    opacity: .9;
+}
 
 .flex-cen-cen {
     display: flex;
