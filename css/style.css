@@ -68,7 +68,7 @@ a {
     display: grid;
     grid-template-areas:
         'dev spacer portfolio contact about';
-    grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
     justify-items: center;
 }
 
