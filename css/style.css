@@ -65,65 +65,57 @@ a {
 }
 
 .nav-ul {
-    display: grid;
-    grid-template-areas:
-        'dev spacer portfolio contact about';
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem 2rem 1rem 1rem;
 }
-
-/* @formatter:off */
-#nav-li-id-1-dev {grid-area: dev;}
-#nav-li-space {grid-area: spacer;}
-#nav-li-id-2-portfolio {grid-area: portfolio;}
-#nav-li-id-3-contact {grid-area: contact;}
-#nav-li-id-4-about {grid-area: about;}
-/* @formatter:on */
 
 .nav-li {
-    margin: .6rem 0;
-    padding: .4rem .8rem;
-}
-
-.nav-li:nth-of-type(1) {
-    justify-self: start;
-    align-self: center;
-    margin-left: 2rem;
-    background-color: var(--black);
-    color: var(--dark-gray);
-    font-family: "Roboto Mono", monospace;
-    font-size: .9rem;
-    border-radius: .3rem;
-
-}
-
-.dev-prompt {
-    animation: dev-prompt 3s linear infinite;
-}
-
-.nav-li:nth-of-type(1) a {
-    color: darkgray;
-}
-
-.nav-li:nth-of-type(1) a:hover {
-    color: var(--light-gray);
-    font-weight: 900;
-}
-
-.nav-li:nth-of-type(5) {
-    margin-right: 2rem;
-    justify-self: end;
+    list-style: none;
 }
 
 .nav-li:hover {
-    /*outline: 2px solid var(--deep-sapphire);*/
     box-shadow: .2rem .2rem .2rem var(--deep-sapphire);
     border-radius: .3rem;
+}
+
+.nav-li-right {
+    padding: 0 1rem;
+}
+
+.nav-li-right:hover {
+    /*outline: 2px solid var(--deep-sapphire);*/
+
 }
 
 .nav-li-right:active {
     outline: .1rem solid var(--deep-sapphire);
     box-shadow: 0 0 0;
+}
+
+#nav-li-id-1-dev {
+    margin-right: auto;
+    margin-left: 1rem;
+    background-color: var(--black);
+    color: var(--dark-gray);
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+    border-radius: .3rem;
+    padding: .3rem;
+}
+
+#nav-li-id-1-dev a {
+    color: darkgray;
+}
+
+#nav-li-id-1-dev a:hover {
+    color: var(--light-gray);
+    font-weight: 900;
+}
+
+.dev-prompt {
+    animation: dev-prompt 3s linear infinite;
 }
 
 /* END NAV AND FIXED-BOTTOM-BORDER */
