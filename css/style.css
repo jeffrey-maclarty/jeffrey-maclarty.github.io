@@ -63,12 +63,12 @@ body {
 }
 
 /* @formatter:off */
-#nav-li-id-1-dev {grid-area: dev;}
-#nav-li-space {grid-area: spacer;}
-#nav-li-id-2-portfolio {grid-area: portfolio;}
-#nav-li-id-3-contact {grid-area: contact;}
-#nav-li-id-4-about {grid-area: about;}
-/* @formatter:off */
+/*#nav-li-id-1-dev {grid-area: dev;}*/
+/*#nav-li-space {grid-area: spacer;}*/
+/*#nav-li-id-2-portfolio {grid-area: portfolio;}*/
+/*#nav-li-id-3-contact {grid-area: contact;}*/
+/*#nav-li-id-4-about {grid-area: about;}*/
+/*!* @formatter:on *!*/
 
 .nav-li {
     margin: 10px 0;
@@ -83,6 +83,8 @@ body {
     outline: 2px solid var(--deep-sapphire);
     border-radius: 25px;
 }
+
+/* END NAV AND FIXED-BOTTOM-BORDER */
 
 .flex-cen-cen {
     display: flex;
@@ -106,46 +108,42 @@ body {
 
 .container-about-thumbs {
     display: grid;
-   grid: repeat(4, 425px) / 425px;
+    grid: repeat(4, 425px) / 425px;
     grid-template-areas:
         'img-1'
         'img-2'
         'img-3'
         'img-4';
-grid-gap: 5px;
+    grid-gap: 5px;
     justify-content: center;
     align-content: center;
     /*height: 2000px;*/
 
 }
 
-.container-about-thumbs .img-1 {
-    background-image: url("https://via.placeholder.com/400.png");
+.container-about-thumbs .img {
     width: 100%;
     height: auto;
-    background-position: center center;
+    background-repeat: no-repeat;
+    border: 3px solid var(--deep-sapphire)
+}
+
+.container-about-thumbs .img-1 {
+    background-image: url("../img/weather-400x385.png");
 }
 
 .container-about-thumbs .img-2 {
-    background-image: url("https://via.placeholder.com/400.png");
-    width: 100%;
-    height: auto;
-    background-position: center center;
+    background-image: url("../img/weather-400x385.png");
 }
 
 .container-about-thumbs .img-3 {
-    background-image: url("https://via.placeholder.com/400.png");
-    width: 100%;
-    height: auto;
-    background-position: center center;
+    background-image: url("../img/weather-400x385.png");
 }
 
 .container-about-thumbs .img-4 {
-    background-image: url("https://via.placeholder.com/400.png");
-    width: 100%;
-    height: auto;
-    background-position: center center;
+    background-image: url("../img/weather-400x385.png");
 }
+
 /* BEGIN CONTAINER-PROJECTS */
 
 .container-projects {
@@ -161,10 +159,16 @@ grid-gap: 5px;
 /* small and up - large phones and tablets */
 @media only screen and (min-width: 600px) {
     .container-about-thumbs {
-           grid: 250px 250px / 1fr 1fr;
+        grid: 250px 250px / 1fr 1fr;
         grid-template-areas:
             'img-1 img-2'
             'img-3 img-4';
+    }
+
+    .container-about-thumbs .img {
+        background-image: url("../img/weather-400x385.png");
+        margin: 0 auto;
+        max-width: 90%;
     }
 }
 
@@ -191,7 +195,7 @@ grid-gap: 5px;
     height: 500px;
     width: 1000px;
     margin-top: 150px;
-    outline: solid 1px var(--black);
+    border: 3px solid var(--deep-sapphire);
     /*background-color: var(--black);*/
 }
 
@@ -199,7 +203,7 @@ grid-gap: 5px;
     height: 400px;
     width: 1000px;
     margin-top: 150px;
-    outline: solid 1px var(--black);
+    border: 3px solid var(--deep-sapphire);
     /*background-color: var(--black);*/
     margin-bottom: 50px;
 }
@@ -207,6 +211,6 @@ grid-gap: 5px;
 .ph-300x240 {
     height: 240px;
     width: 300px;
-    outline: solid 1px var(--black);
+    border: 3px solid var(--deep-sapphire);
     /*background-color: var(--black);*/
 }
